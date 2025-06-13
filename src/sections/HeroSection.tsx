@@ -26,17 +26,15 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
       <div className="relative z-10 max-w-4xl mx-auto">
         {/* 텍스트 크기 조절: md:text-5xl, lg:text-6xl 로 조정 */}
         <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-[--color-text-main] mb-4">
-          <span className="block">농가 사장님의 소중한 수확물,</span>
-          <span className="block text-[--color-primary-text]">
-            쿠팡에서 최고의 가치로 판매해 드립니다.
-          </span>
+          <span className="block">농수산물 전문 위탁 판매</span>
+          <span className="block text-text-main">쿠팡 전문 셀러</span>
         </h1>
         {/* p 태그 텍스트 크기 조절: md:text-lg 로 조정 */}
-        <p className="text-md md:text-lg text-[--color-text-paragraph] mb-8 max-w-2xl mx-auto">
-          이제 시작하는 저희지만, **데이터 기반의 스마트한 분석**과 **야무진
-          실행력**으로
+        <p className="text-md md:text-lg text-[--color-text-paragraph] mb-8 max-w-2xl mx-auto break-keep">
+          데이터 기반의 스마트한 분석과 전문적인 실행력으로 농가 사장님의 소중한
+          수확물,
           <br className="hidden md:block" />
-          오직 결과로 보여드리겠습니다.
+          오로지 최상의 가치로 판매해 드립니다.
         </p>
         <Button
           onClick={() => onNavigate("contact-us")}
