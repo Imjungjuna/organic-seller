@@ -20,7 +20,7 @@ const OurProcessSection: React.FC = () => {
       icon: <Package size={40} className="text-[--color-primary-text]" />,
       title: "3. 판매 & 관리",
       description:
-        "상품 등록부터 상세 페이지 기획, 포장, 배송, 고객 응대까지 야무지게 관리하며 판매를 극대화합니다.",
+        "상품 등록부터 상세 페이지 기획, 포장, 배송, 고객 응대까지 꼼꼼하게 관리하며 판매를 극대화합니다.",
     },
     {
       icon: <DollarSign size={40} className="text-[--color-primary-text]" />,
@@ -31,24 +31,17 @@ const OurProcessSection: React.FC = () => {
   ];
 
   return (
-    <section id="our-process" className="py-20 px-4 bg-[--color-background]">
+    <section id="how-we-help" className="py-20 bg-[--color-background]">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[--color-text-main] mb-16">
-          쿠팡 판매,{" "}
-          <span className="text-[--color-primary-text]">
-            이렇게 진행됩니다!
-          </span>
-        </h2>
+        <p className="mt-20 md:py-10 text-4xl md:text-5xl font-semibold text-[--color-text-main] mb-10">
+          위탁 판매, 이렇게 진행됩니다!
+        </p>
 
         <div className="relative flex flex-col items-center md:flex-row md:justify-between space-y-12 md:space-y-0 md:space-x-8">
-          {/* 모바일 세로선 / 데스크톱 가로선 */}
-          <div className="absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-0.5 bg-gray-200 md:hidden"></div>
-          <div className="absolute left-0 right-0 top-1/2 -translate-y-1/2 h-0.5 bg-gray-200 hidden md:block"></div>
-
           {steps.map((step, index) => (
             <div
               key={index}
-              className="relative z-10 bg-[--color-background] rounded-xl p-8 shadow-lg flex flex-col items-center max-w-sm w-full"
+              className="hover:shadow-xl transition transform duration-300 relative z-10 bg-[--color-background] rounded-xl p-8 shadow-lg flex flex-col items-center max-w-sm w-full"
             >
               <div className="w-16 h-16 bg-[--color-hover-background] rounded-full flex items-center justify-center mb-6">
                 {step.icon}
@@ -56,7 +49,7 @@ const OurProcessSection: React.FC = () => {
               <h3 className="text-2xl font-bold text-[--color-text-main] mb-3">
                 {step.title}
               </h3>
-              <p className="text-[--color-text-paragraph] text-center leading-relaxed">
+              <p className="text-[--color-text-paragraph] text-center leading-relaxed break-keep">
                 {step.description}
               </p>
             </div>

@@ -13,11 +13,11 @@ const Button: React.FC<ButtonProps> = ({
   ...props
 }) => {
   const baseStyles =
-    "px-6 py-3 rounded-xl font-semibold transition-all duration-300 ease-in-out";
+    "hover:cursor-pointer hover:shadow-lg hover:translate-y-[-2px] px-6 py-3 rounded-xl font-semibold transition-all duration-300 ease-in-out";
 
   const variantStyles = {
     primary:
-      "bg-[--color-primary] text-[--color-primary-text] hover:opacity-80",
+      "bg-[--color-primary] text-[--color-primary-text] hover:opacity-90",
     secondary:
       "bg-transparent text-[--color-text-main] border border-[--color-text-main] hover:bg-[--color-hover-background]",
   };

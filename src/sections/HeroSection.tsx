@@ -1,4 +1,3 @@
-// src/sections/HeroSection.tsx
 import React from "react";
 import Button from "../components/Button";
 
@@ -10,37 +9,30 @@ const HeroSection: React.FC<HeroSectionProps> = ({ onNavigate }) => {
   return (
     <section
       id="hero"
-      className="relative flex items-center justify-center min-h-[70vh] py-20 px-4 bg-[--color-background] text-center overflow-hidden"
+      className="relative flex items-center justify-center min-h-[80vh] py-20 px-4 bg-background text-center overflow-hidden"
     >
-      {/* 배경 이미지/영상 플레이스홀더 (이제 실제 이미지 경로를 사용) */}
       <div className="absolute inset-0 z-0 opacity-50">
-        {" "}
-        {/* opacity 조절로 텍스트 가독성 확보 */}
-        <img
-          src="/images/hero-background.jpg" // 이 경로에 이미지를 저장해야 합니다.
+        {/* <img
+          src="/assets/hero-background.jpg"
           alt="신선한 농산물과 함께하는 사람들"
           className="w-full h-full object-cover"
-        />
+        /> */}
       </div>
 
-      <div className="relative z-10 max-w-4xl mx-auto">
-        {/* 텍스트 크기 조절: md:text-5xl, lg:text-6xl 로 조정 */}
-        <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold leading-tight text-[--color-text-main] mb-4">
-          <span className="block">농수산물 전문 위탁 판매</span>
-          <span className="block text-text-main">쿠팡 전문 셀러</span>
-        </h1>
-        {/* p 태그 텍스트 크기 조절: md:text-lg 로 조정 */}
-        <p className="text-md md:text-lg text-[--color-text-paragraph] mb-8 max-w-2xl mx-auto break-keep">
-          데이터 기반의 스마트한 분석과 전문적인 실행력으로 농가 사장님의 소중한
-          수확물,
-          <br className="hidden md:block" />
-          오로지 최상의 가치로 판매해 드립니다.
+      <div className="relative z-10 mx-auto">
+        <p className="block text-4xl md:text-5xl lg:text-6xl font-semibold leading-tight text-text-main mb-4">
+          농가 소득 증대<span className="hidden sm:inline">를 위한</span> <br />
+          <span className="text-blue-600 block sm:inline">농산물 전문 </span>
+          위탁 판매 서비스.
+        </p>
+        <p className="text-lg  lg:text-[28px] text-text-paragraph mb-4 md:mb-8 mx-auto break-keep">
+          복잡한 판매는 저희에게 맡기고, 이제는 농산물 생산에만 집중하세요.
         </p>
         <Button
           onClick={() => onNavigate("contact-us")}
-          className="text-base px-6 py-3 md:px-8 md:py-4"
+          className="text-md md:text-lg lg:text-[28px] bg-gray-300 px-6 py-3 md:px-8 md:py-4"
         >
-          지금 바로 무료 상담 신청하기
+          원클릭으로 유통고민 끝내기
         </Button>
       </div>
     </section>

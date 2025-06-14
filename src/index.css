@@ -2,13 +2,13 @@
 @import "tailwindcss";
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Pretendard, sans-serif;
   line-height: 1.5;
   font-weight: 400;
 }
 
 @theme {
-  --font-family-sans: "Pretendard", sans-serif;
+  --font-family-sans: "Pretendard";
   --color-primary: #ffeeb2; /* 버튼 배경 색상 */
   --color-primary-text: rgb(255, 111, 0); /* 버튼 텍스트 색상 */
   --color-background: #ffffff; /* 메인 배경 색상 */

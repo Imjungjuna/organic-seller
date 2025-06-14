@@ -62,7 +62,7 @@ const FAQSection: React.FC = () => {
   return (
     <section id="faq" className="py-20 px-4 bg-[--color-background]">
       <div className="container mx-auto max-w-3xl">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-center text-[--color-text-main] mb-12">
+        <h2 className="text-4xl md:text-5xl font-semibold text-center text-[--color-text-main] mb-12">
           자주 묻는 <span className="text-[--color-primary-text]">질문</span>
         </h2>
         <div className="space-y-4">

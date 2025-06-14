@@ -1,4 +1,3 @@
-// src/components/Header.tsx
 import React from "react";
 import Button from "./Button";
 import { Menu } from "lucide-react"; // 햄버거 메뉴 아이콘
@@ -9,9 +8,8 @@ interface HeaderProps {
 
 const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
   return (
-    <header className="sticky top-0 z-50 w-full bg-[--color-background] py-4 shadow-sm">
+    <header className="sticky top-0 z-50 w-full bg-background py-4 shadow-sm">
       <div className="container mx-auto flex items-center justify-between px-4">
-        {/* 로고 영역 */}
         <div className="text-xl font-bold text-[--color-text-main]">
           <a href="#" onClick={() => onNavigate("hero")}>
             쿠팡 위탁셀러 (로고)

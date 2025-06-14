@@ -6,17 +6,16 @@ const TrustAndAssuranceSection: React.FC = () => {
   return (
     <section
       id="trust-assurance"
-      className="py-20 px-4 bg-[--color-hover-background]"
+      className="py-30 bg-[--color-hover-background]"
     >
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[--color-text-main] mb-12">
-          농가 사장님의{" "}
-          <span className="text-[--color-primary-text]">
-            안심을 약속합니다.
-          </span>
-        </h2>
+        <p className="text-4xl md:text-5xl font-semibold text-[--color-text-main] mb-12">
+          농가 사장님의 안심을 약속합니다.
+        </p>
         <p className="text-lg md:text-xl text-[--color-text-paragraph] mb-16 max-w-3xl mx-auto">
-          저희는 농가와의 **투명하고 신뢰 깊은 파트너십**을 최우선으로 생각하며,{" "}
+          저희는 농가와의{" "}
+          <span className="font-semibold">투명하고 신뢰 깊은 파트너십</span>을
+          최우선으로 생각하며,
           <br className="hidden md:block" />
           모든 과정에서 정직함과 책임감을 바탕으로 함께 성장해 나갑니다.
         </p>
@@ -44,7 +43,7 @@ const TrustAndAssuranceSection: React.FC = () => {
               className="max-w-xs md:max-w-sm rounded-lg border border-gray-200 mb-4"
             />
             <p className="text-sm text-[--color-text-paragraph]">
-              *신뢰 확보를 위해 일부 정보는 모자이크 처리되었습니다.
+              *일부 개인정보는 모자이크 처리되었습니다.
             </p>
             <p className="text-base text-[--color-text-main] font-semibold mt-2">
               통신판매업 신고번호: 제 202X-서울OOO-XXXX호

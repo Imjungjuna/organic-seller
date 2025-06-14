@@ -1,6 +1,5 @@
-// src/sections/OurDifferenceSection.tsx
 import React from "react";
-import { BarChart2, CheckCircle, Handshake } from "lucide-react"; // 예시 아이콘
+import { BarChart2, CheckCircle, Handshake } from "lucide-react";
 
 const OurDifferenceSection: React.FC = () => {
   const features = [
@@ -12,7 +11,7 @@ const OurDifferenceSection: React.FC = () => {
     },
     {
       icon: <CheckCircle size={48} className="text-[--color-primary-text]" />,
-      title: "야무진 실행력과 꼼꼼함",
+      title: "섬세한 실행력과 꼼꼼함",
       description:
         "복잡한 상품 등록, 포장, 배송, 고객 응대까지 모든 과정을 빈틈없이 처리하여 효율을 높입니다.",
     },
@@ -25,17 +24,14 @@ const OurDifferenceSection: React.FC = () => {
   ];
 
   return (
-    <section
-      id="how-we-help"
-      className="py-20 px-4 bg-[--color-hover-background]"
-    >
-      <div className="container mx-auto text-center">
-        <h2 className="text-4xl md:text-5xl font-extrabold text-[--color-text-main] mb-16">
+    <section id="who-we-are" className="bg-[--color-hover-background]">
+      <div className="py-20 container mx-auto text-center">
+        <p className="mt-20 leading-[1.2] text-4xl md:text-5xl font-semibold text-[--color-text-main] sm:mb-24 mb-16">
           왜 저희에게 맡기셔야 할까요? <br className="hidden md:block" />
-          <span className="text-[--color-primary-text]">
-            똑똑하고 야무진 파트너십
+          <span className="text-text-main border-b-8 border-primary">
+            똑똑하고 빈틈없는 판매관리
           </span>
-        </h2>
+        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {features.map((feature, index) => (
@@ -47,7 +43,7 @@ const OurDifferenceSection: React.FC = () => {
               <h3 className="text-2xl font-bold text-[--color-text-main] mb-4">
                 {feature.title}
               </h3>
-              <p className="text-[--color-text-paragraph] text-center leading-relaxed">
+              <p className="text-[--color-text-paragraph] text-center leading-relaxed break-keep">
                 {feature.description}
               </p>
             </div>
