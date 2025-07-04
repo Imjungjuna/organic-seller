@@ -12,7 +12,7 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
       <div className="container mx-auto flex items-center justify-between px-4">
         <div className="text-xl font-bold text-[--color-text-main]">
           <a href="#" onClick={() => onNavigate("hero")}>
-            쿠팡 위탁셀러 (로고)
+            맑고밝은자연
           </a>
         </div>
 
@@ -23,14 +23,14 @@ const Header: React.FC<HeaderProps> = ({ onNavigate }) => {
             className="text-[--color-text-main] hover:text-opacity-70 transition-colors"
             onClick={() => onNavigate("who-we-are")}
           >
-            우리는
+            강점 소개
           </a>
           <a
             href="#how-we-help"
             className="text-[--color-text-main] hover:text-opacity-70 transition-colors"
             onClick={() => onNavigate("how-we-help")}
           >
-            어떻게 돕나요
+            진행 과정
           </a>
           <a
             href="#contact-us"
