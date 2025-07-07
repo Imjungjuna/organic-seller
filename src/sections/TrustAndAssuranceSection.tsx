@@ -9,7 +9,7 @@ const TrustAndAssuranceSection: React.FC = () => {
       className="py-30 bg-[--color-hover-background]"
     >
       <div className="container mx-auto text-center">
-        <p className="text-4xl md:text-5xl font-semibold text-[--color-text-main] mb-12">
+        <p className="text-4xl md:text-5xl font-semibold text-[--color-text-main] mb-12 break-keep">
           농가 사장님의 안심을 약속합니다.
         </p>
         <p className="text-lg md:text-xl text-[--color-text-paragraph] mb-16 max-w-3xl mx-auto">

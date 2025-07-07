@@ -48,7 +48,7 @@ const OurDifferenceSection: React.FC = () => {
       className="bg-[--color-hover-background]"
     >
       <div className="py-20 container mx-auto text-center">
-        <p className="mt-20 leading-[1.2] text-4xl md:text-5xl font-semibold text-[--color-text-main] sm:mb-24 mb-16">
+        <p className="mt-20 leading-[1.2] text-4xl md:text-5xl font-semibold text-[--color-text-main] break-keep sm:mb-24 mb-16">
           왜 저희에게 맡기셔야 할까요?{" "}
           <br className="hidden md:block" />
           <span className="text-text-main border-b-8 border-primary">
